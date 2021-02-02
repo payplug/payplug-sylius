@@ -23,8 +23,8 @@
             display: none;
 
             &:checked + label {
-                border-color: $green;
-                background-color: transparentize($green, .87)
+                border-color: const("green");
+                background-color: transparentize(const("green"), .87)
             }
         }
 
@@ -35,8 +35,8 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            border: 1px solid $lightgrey;
-            box-shadow: 0 1px 2px 0 transparentize($darkgrey, .85);
+            border: 1px solid const("lightgrey");
+            box-shadow: 0 1px 2px 0 transparentize(const("darkgrey"), .85);
             padding: 1em 1em;
             border-radius: .28571429rem;
             transition: border-color, background-color 300ms ease-in-out;
@@ -61,11 +61,11 @@
         display: contents;
 
         p {
-            color: $black;
+            color: const("black");
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            border-bottom: 1px solid $lightgrey;
+            border-bottom: 1px solid const("lightgrey");
             margin: 0 !important;
             padding: .75rem 0 !important;
 
@@ -112,7 +112,7 @@
                 top: 1em;
                 margin: 0;
                 border-radius: 0;
-                background-color: rgba(0,0,0,.05);
+                background-color: transparentize(const("black"), .95);
 
                 &:first-of-type {
                     transform: rotate(45deg);
@@ -139,9 +139,9 @@
                 padding: .5833em .833em;
                 font-weight: 700;
                 border-radius: .28571429rem;
-                background-color: $red;
-                border-color: $red;
-                color: $white;
+                background-color: const("red");
+                border-color: const("red");
+                color: const("white");
                 font-size: .85714286rem;
             }
         }
@@ -170,7 +170,7 @@
     height: 100%;
     position: absolute;
     display: block;
-    background: transparentize($black, .75);
+    background: transparentize(const("black"), .75);
     z-index: 3;
 }
 
@@ -184,15 +184,15 @@
                 padding: 1rem 0;
                 flex: 1;
                 text-align: center;
-                border: 1px solid $lightgrey;
+                border: 1px solid const("lightgrey");
                 border-bottom: 0;
 
                 &.active {
-                    border-bottom: 5px solid $green;
+                    border-bottom: 5px solid const("green");
                 }
 
                 p {
-                    color: $black;
+                    color: const("black");
                 }
 
                 &:first-of-type {
@@ -219,8 +219,8 @@
             display: none;
 
             input:checked + label {
-                border-color: $lightgrey;
-                background-color: $white;
+                border-color: const("lightgrey");
+                background-color: const("white");
             }
 
             label {
